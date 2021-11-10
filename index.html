@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - Reactive DOM with Fetch</title>
+</head>
+<body>
+    <h1>Post Crud</h1>
+	<h2>Add Post</h2>
+	<form id="form-add-post">
+		<span>Title</span><br>
+		<input type="text" id="txt-title"><br>
+		<span>Body</span><br>
+		<textarea type="text" id="txt-body"></textarea><br>
+		<button type="submit">Create</button>
+	</form>
+	<hr>
+	<h2>Edit Post</h2>
+	<form id="form-edit-post">
+		<input type="text" id="txt-edit-id" hidden><br>
+		<span>Title</span><br>
+		<input type="text" id="txt-edit-title"><br>
+		<span>Body</span><br>
+		<textarea id="txt-edit-body" type="text"></textarea><br>
+		<button type="submit" id="btn-submit-update" disabled>Update</button>
+	</form>
+	<hr>
+	<h2>Posts</h2>
+	<div id="div-post-entries"></div>
+
+	<script type="text/javascript" src="./index.js"></script>
+</body>
+</html>
